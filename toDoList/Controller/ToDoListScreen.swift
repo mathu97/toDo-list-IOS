@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ToDoListScreen: UIViewController {
+class ToDoListScreen: UIViewController , UITableViewDataSource, UITableViewDelegate{
 	
 	var toDoTasks: [ToDoTask] = []
 	
@@ -24,15 +24,12 @@ class ToDoListScreen: UIViewController {
 	
 	func createTempTasks() -> [ToDoTask] {
 		var tempTasks: [ToDoTask] = []
-		tempTasks.append(ToDoTask(taskName: "hello", importance: "bye"))
+		tempTasks.append(ToDoTask(taskName: "hello", description: "This is the description", importance: "bye"))
 		
 		return tempTasks
 		
 	}
 	
-}
-
-extension ToDoListScreen: UITableViewDataSource, UITableViewDelegate {
 	func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 		return toDoTasks.count
 	}
@@ -47,5 +44,11 @@ extension ToDoListScreen: UITableViewDataSource, UITableViewDelegate {
 	}
 	
 	
+	
+	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+		if let createVC = segue.destination as? CreateToDoViewController {
+			createVC.toDoTableVC = self
+		}
+	}
+	
 }
-
