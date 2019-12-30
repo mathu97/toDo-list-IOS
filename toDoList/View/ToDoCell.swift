@@ -11,6 +11,7 @@ import UIKit
 class ToDoCell: UITableViewCell {
 
 	@IBOutlet weak var cellLabel: UILabel!
+	var currToDo : ToDoTask = ToDoTask(taskName: "", description: "", importance: "")
 	
 	override func awakeFromNib() {
         super.awakeFromNib()
@@ -23,8 +24,9 @@ class ToDoCell: UITableViewCell {
         // Configure the view for the selected state
     }
 	
-	func setLabel(task: ToDoTask){
-		cellLabel.text = task.taskName
+	func setTask(task: ToDoTask){
+		currToDo = task;
+		cellLabel.text = currToDo.taskName
 	}
 
 }

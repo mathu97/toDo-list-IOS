@@ -38,16 +38,24 @@ class ToDoListScreen: UIViewController , UITableViewDataSource, UITableViewDeleg
 		
 		let task = toDoTasks[indexPath.row]
 		let cell = tableView.dequeueReusableCell(withIdentifier: "toDoCell") as! ToDoCell
-		cell.setLabel(task: task)
+		cell.setTask(task: task)
 		
 		return cell
 	}
 	
-	
+	func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+		let selectedTask = toDoTasks[indexPath.row]
+		performSegue(withIdentifier: "moreInfoSegue", sender: selectedTask)
+	}
 	
 	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 		if let createVC = segue.destination as? CreateToDoViewController {
 			createVC.toDoTableVC = self
+		} else if let moreInfoVC = segue.destination as? MoreInfoVC {
+			if let selectedTask = sender as? ToDoTask {
+				moreInfoVC.toDoTableVC = self
+				moreInfoVC.currTask = selectedTask
+			}
 		}
 	}
 	

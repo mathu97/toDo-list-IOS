@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		8203D0FA23B6C90100985AD3 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8203D0F923B6C90100985AD3 /* RoundedButton.swift */; };
 		8203D0FC23B8070600985AD3 /* CreateToDoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8203D0FB23B8070600985AD3 /* CreateToDoViewController.swift */; };
+		8203D10023B9A30000985AD3 /* MoreInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8203D0FF23B9A30000985AD3 /* MoreInfoVC.swift */; };
 		82DCD9D423B4FD3700878C0A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DCD9D323B4FD3700878C0A /* AppDelegate.swift */; };
 		82DCD9D623B4FD3700878C0A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DCD9D523B4FD3700878C0A /* SceneDelegate.swift */; };
 		82DCD9D823B4FD3700878C0A /* ToDoListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DCD9D723B4FD3700878C0A /* ToDoListScreen.swift */; };
@@ -22,6 +23,7 @@
 /* Begin PBXFileReference section */
 		8203D0F923B6C90100985AD3 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		8203D0FB23B8070600985AD3 /* CreateToDoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateToDoViewController.swift; sourceTree = "<group>"; };
+		8203D0FF23B9A30000985AD3 /* MoreInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreInfoVC.swift; sourceTree = "<group>"; };
 		82DCD9D023B4FD3700878C0A /* toDoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = toDoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		82DCD9D323B4FD3700878C0A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		82DCD9D523B4FD3700878C0A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 				82DCD9D323B4FD3700878C0A /* AppDelegate.swift */,
 				82DCD9D523B4FD3700878C0A /* SceneDelegate.swift */,
 				8203D0FB23B8070600985AD3 /* CreateToDoViewController.swift */,
+				8203D0FF23B9A30000985AD3 /* MoreInfoVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -177,6 +180,7 @@
 				82DCD9D823B4FD3700878C0A /* ToDoListScreen.swift in Sources */,
 				8203D0FC23B8070600985AD3 /* CreateToDoViewController.swift in Sources */,
 				8203D0FA23B6C90100985AD3 /* RoundedButton.swift in Sources */,
+				8203D10023B9A30000985AD3 /* MoreInfoVC.swift in Sources */,
 				82DCD9D423B4FD3700878C0A /* AppDelegate.swift in Sources */,
 				82DCDA1123B68FCF00878C0A /* ToDoTask.swift in Sources */,
 				82DCD9D623B4FD3700878C0A /* SceneDelegate.swift in Sources */,
