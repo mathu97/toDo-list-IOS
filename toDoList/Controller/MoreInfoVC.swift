@@ -25,10 +25,11 @@ class MoreInfoVC: UIViewController {
 	@IBAction func completedTask(_ sender: Any) {
 		if let toDos = toDoTableVC?.toDoTasks {
 			for (index, task) in toDos.enumerated(){
-				if currTask.taskName == task.taskName {
+				if currTask === task {
 					toDoTableVC?.toDoTasks.remove(at: index)
 					toDoTableVC?.tableView.reloadData()
 					navigationController?.popViewController(animated: true)
+					return
 				}
 			}
 		}
